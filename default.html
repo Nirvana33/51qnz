@@ -1,0 +1,306 @@
+﻿
+
+
+
+ 
+<!DOCTYPE html>
+
+<!-- 公共样式、js框架和公共效果  -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+
+<!-- 视频插件 -->
+<link href="css/video-js.css" rel="stylesheet" type="text/css">
+<script src="js/video.js"></script>
+
+<!-- 分页插件 -->
+<script type="text/javascript" src="js/jquery.page.js"></script>
+
+<!-- 头部 header -->
+<div class="header index_header">
+	<div class="w100">
+		<div class="vertical w1200">
+			<a href="/index.html" class="head_logo" title="去农庄"><img src="picture/logo.png" /></a>
+			<ul class="head_ation">
+				<li><a href="/index.html"><i class="head_i">首页&nbsp;/&nbsp;home</i></a></li>			
+				<li><a href="/news.html"><i class="head_i">新闻&nbsp;/&nbsp;news</i></a></li>
+				<li><a href="/column.html"><i class="head_i">栏目&nbsp;/&nbsp;column</i></a></li>
+				<!-- <li><a href="/newsPage/getNewsVideoPage.xhtml"><i class="head_i">栏目&nbsp;/&nbsp;column</i></a></li>  -->
+				<li><a href="/about.html"><i class="head_i">关于&nbsp;/&nbsp;about</i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<title>去农庄</title>
+	<script type="text/javascript">
+	//判断是否手机浏览器网站
+	try {
+		var urlhash = window.location.hash;
+		if (!urlhash.match("fromapp")){
+			if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))){
+				window.location="/indexphone.html";
+			}
+		}
+	}catch(err){
+		
+	}
+	</script>
+	<!-- 滚屏插件 -->
+	<link rel="stylesheet" href="css/jquery.fullpage.css">
+	<script src="js/jquery.fullpage.min.js"></script>
+	<style type="text/css">
+	.index_header{ background-color: rgb(255,255,255); border-bottom: 1px solid #ddd;padding-right:17px; }
+	</style>
+	<script>
+	//滚屏效果
+	$(function(){
+		$('#dowebok').fullpage({
+			anchors: ['page1', 'page2', 'page3', 'page4' ,'page5' ,'page6'],
+			menu: '#menu',
+			'scrollingSpeed': 500,
+			'afterLoad' : function(anchorLink,index){
+				var myPlayera = _V_('index_video1');
+				var myPlayerd = _V_('index_video2');
+				var myPlayerc = _V_('index_video3');
+				if ( anchorLink == "page2" || index == 2 ){
+					var sd = $('.tad-cpoti .tad-cull').index();
+					var dd = $('.tad-container .tad-ma').eq(sd);
+					if( sd == 0 ){
+						myPlayera.play();
+					}
+					if( sd == 1 ){
+						myPlayerd.play();
+					}
+					if( sd == 2 ){
+						myPlayerc.play();
+					}
+					
+				}else{
+					myPlayera.pause();
+					myPlayerd.pause();
+					myPlayerc.pause();
+				}
+			},
+		});
+	});
+	videojs.options.flash.swf = "js/video-js.swf";
+
+	</script>
+
+</head>
+<body>
+<input type="hidden" value="1" id="hrefid"/>
+<div class="banner" style="display:none;"></div>
+
+<ul class="fixedul" id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1"><span>1 -</span><i></i><em></em></a></li>
+	<li data-menuanchor="page2"><a href="#page2"><span>2 -</span><i></i><em></em></a></li>
+	<li data-menuanchor="page3"><a href="#page3"><span>3 -</span><i></i><em></em></a></li>
+	<li data-menuanchor="page4"><a href="#page4"><span>4 -</span><i></i><em></em></a></li>
+	<li data-menuanchor="page5"><a href="#page5"><span>5 -</span><i></i><em></em></a></li>
+	<li data-menuanchor="page6"><a href="#page6"><span>6 -</span><i></i><em></em></a></li>
+</ul>
+
+<div id="dowebok">
+
+	<div class="section main_cont main-cont-div1">
+		<div class="qnz-background">
+			<div class="vertical qnz-center">
+				<div class=" qnz-left">
+					<img src="picture/qnztu.png" alt="" />
+				</div>
+				<div class="qnz-right vertical">
+					<h3 class="qnzyzs">
+						<img src="picture/qnzyzs.png" alt="去农庄-乡村旅游一站式预订平台" />
+					</h3>
+					<ul class="qnz-ul">
+						<li class="qnz-download qnz-li-182">
+							<a href="http://app.qq.com/#id=detail&appid=1104737527" class="android2" alt="安卓APP下载"></a>
+						</li>
+						<li class="qnz-li-182">
+							<a href="https://itunes.apple.com/cn/app/qu-nong-zhuang-wang/id1050516122?mt=8" class="iphone2" alt="IOSAPP下载"></a>
+						</li>
+						<li class="qnz-code">
+							<img src="picture/androidqnzxz.png" alt="关注微信公众号"/>
+						</li>
+						<li class="qnz-zmnzjkx">
+							<img src="picture/zmnzjkx.png" alt="爱家享健康 醉美去农庄"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section main_cont background-c1 index_2">
+		<div class="w100">
+			<div class="vertical w1200 index-tad">
+				<div class="tad-cpoti">
+					<ul class="clear">
+						<li class="tad-click tad-cull tad_1">
+							<img src="picture/1.png" title="上 去农庄和自我对话"/>
+							<div class="tad-vague"></div>
+						</li>
+						<li class="tad-click tad_2">
+							<img src="picture/2.png" title="让所有梦想落地开花"/>
+							<div class="tad-vague"></div>
+						</li>
+						<li class="tad-click tad_3">
+							<img src="picture/3.png" title="去农庄App介绍"/>
+							<div class="tad-vague"></div>
+						</li>
+					</ul>
+					<a href="/column.html" class="tad-more">更多 >></a>
+				</div>
+				<div class="tad-container">
+					<div class="tad-ma">
+						<div class="tad-video" title="上 去农庄和自我对话">
+							<video id="index_video1" class="index-video3 video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="100%" height="100%" poster="/images/1.png" data-setup="{}">
+								<source src="http://www.51qnz.com.cn/upload/mp4/1.mp4" type='video/mp4' />
+								<source src="http://www.51qnz.com.cn/upload/ogg/1.ogg" type='video/ogg' />
+							</video>
+						</div>
+						<div class="tad-content">
+							<h1>上 去农庄和自我对话</h1>
+							<p>去农庄™专注于乡村服务行业的整合，它将城市周边的农家菜、民宿、农庄、山庄、采摘园、度假村、钓鱼场、农场等乡村旅游体整合在一起，建立全国性的比价、评价平台，同时为城市居民提供原生态的农副产品。去农庄™已经拿到天使轮、Pre-A轮两轮投资，A轮估值6.5亿。预计，2016-2018年在全国300个城市开通运营，并于2019-2020在境外IPO，实现市值破百亿的目标。</p>
+						</div>
+					</div>
+					<div class="tad-ma none tad-ma2">
+						<div class="tad-video" title="让所有梦想落地开花">
+							<video id="index_video2" class="index-video2 video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="100%" height="100%" poster="/images/2.png" data-setup="{}">
+								<source src="http://www.51qnz.com.cn/upload/mp4/2.mp4" type='video/mp4' />
+								<source src="http://www.51qnz.com.cn/upload/ogg/2.ogg" type='video/ogg' />
+							</video>
+						</div>
+						<div class="tad-content">
+							<h1>让所有梦想落地开花</h1>
+							<p>城市是彩色的，乡村是单色的，所以很多人从乡村走进城市。但，后来发现…城市是现实的，乡村是自由的，所以有很多人从城市逃离乡村。</p>
+						</div>
+					</div>
+					<div class="tad-ma none">
+						<div class="tad-video" title="去农庄App介绍">
+							<video id="index_video3" class="index-video3 video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="100%" height="100%" poster="/images/3.png" data-setup="{}">
+								<source src="http://www.51qnz.com.cn/upload/mp4/3.mp4" type='video/mp4' />
+								<source src="http://www.51qnz.com.cn/upload/ogg/3.ogg" type='video/ogg' />
+							</video>
+						</div>
+						<div class="tad-content">
+							<h1>去农庄App介绍</h1>
+							<p>假期周边乡村游，想要说走就走？没人陪、没爱车、网络信息庞大、无法进行精挑细选传统旅游网站周边游、都是景区景点、车多人多、不给力呀快把它送到去农庄网吧。 去农庄网为您精挑细选，不用海量阅读，周边乡村游信息 ，一手掌握。</p><img alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section main_cont">
+		<div class="w100">
+			<div class="vertical clear index-images">
+				<img class="xqym-l" src="picture/tysh.png" alt="农庄资讯"/>
+				<div class="xqym-r">
+					<img src="picture/jmyh.png" alt="去农庄"/>
+					<div>
+						<p>去农庄™专注于乡村服务行业的整合，他将城市周边的农家菜、民宿、农庄、山庄、采摘园、度假村、钓鱼场、农场等乡村旅游体整合在一起，建立全国性的比价、评价平台，同时为城市居民提供原生态的农副产品。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section main_cont background-c1">
+		<div class="w100">
+			<div class="vertical clear index-images">
+				<div class="xqym-r">
+					<img src="picture/hlhd.png" alt="去农庄"/>
+					<div>
+						<p>去农庄不仅给用户提供海量优质出游活动，还会持续关注不同用户的个性化需求，每天推出更多的优惠活动。让广大用户一手掌握官方最新的周边乡村游信息，出游省钱更省心。</p>
+					</div>
+				</div>
+				<img class="xqym-l" src="picture/sgjy.png" alt="海量活动"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="section main_cont">
+		<div class="w100">
+			<div class="vertical clear index-images">
+				<img class="xqym-l" src="picture/jls.png" alt="去农庄"/>
+				<div class="xqym-r">
+					<img src="picture/drfx.png" alt="达人分享"/>
+					<div>
+						<p>精选最优质的出游攻略，丰富广大用户的旅途生活，同时也为大家提供一个良好的交流平台。在这里，旅行达人们会讲述他的旅途故事、旅游心得等。通过旅行达人分享，你会知道有什么好玩的好吃的，需要注意些什么。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section main_cont">
+		<div class="bottom-bs">
+			<p class="bottom-24">根据你的手机选择下载</p>
+			<ul class="bottom-ul">
+				<li><a href="https://itunes.apple.com/cn/app/qu-nong-zhuang-wang/id1050516122?mt=8" class="iphone" alt="IOSAPP下载"></a></li>
+				<li class="bottom-bs-li"><a href="http://app.qq.com/#id=detail&appid=1104737527" class="android" alt="安卓APP下载"></a></li>
+				<li><img  class="" src="picture/app.png" alt="微信AAP下载" /></li>
+			</ul>
+		</div>
+		<div class="footer index_footer">
+			<ul class="vertical footer-di">
+				<li>总部：深圳市龙华新区民治人民路恒江大厦11楼</li>
+				<li>客户服务热线：400-6977-020</li>
+				<li class="li-h">&copy;copyright 2016 | 去农庄 ALL rights reserved.粤ICP备15060648号-2</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+$(function(){
+	var myPlayera = _V_('index_video1');
+	var myPlayerd = _V_('index_video2');
+	var myPlayerc = _V_('index_video3');
+	$(".tad_1").click(function(){
+		myPlayera.play();
+		myPlayera.currentTime(0);
+		myPlayera.volume(0.5);
+		myPlayerd.pause();
+		myPlayerc.pause();
+		$('.tad-cpoti .tad-click').removeClass('tad-cull');
+		$('.tad_1').addClass('tad-cull');
+		$('.tad-container .tad-ma').hide().eq(0).show();
+	})
+	$(".tad_2").click(function(){
+		myPlayerd.play();
+		myPlayerd.currentTime(0);
+		myPlayerd.volume(0.5);
+		myPlayera.pause();
+		myPlayerc.pause();
+		$('.tad-cpoti .tad-click').removeClass('tad-cull');
+		$('.tad_2').addClass('tad-cull');
+		$('.tad-container .tad-ma').hide().eq(1).show();
+	})
+	$(".tad_3").click(function(){
+		myPlayerc.play();
+		myPlayerc.currentTime(0);
+		myPlayerc.volume(0.5);
+		myPlayera.pause();
+		myPlayerd.pause();
+		$('.tad-cpoti .tad-click').removeClass('tad-cull');
+		$('.tad_3').addClass('tad-cull');
+		$('.tad-container .tad-ma').hide().eq(2).show();
+	})		
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,714 @@
+﻿
+
+
+
+ 
+<!DOCTYPE html>
+
+<!-- 公共样式、js框架和公共效果  -->
+<link rel="stylesheet" type="text/css" href="css/style_6.css" />
+<script type="text/javascript" src="js/jquery.min_5.js"></script>
+<script type="text/javascript" src="js/style_6.js"></script>
+
+<!-- 视频插件 -->
+<link href="css/video-js_6.css" rel="stylesheet" type="text/css">
+<script src="js/video_5.js"></script>
+
+<!-- 分页插件 -->
+<script type="text/javascript" src="js/jquery.page_6.js"></script>
+
+<!-- 头部 header -->
+<div class="header index_header">
+	<div class="w100">
+		<div class="vertical w1200">
+			<a href="/index.html" class="head_logo" title="去农庄"><img src="picture/logo_5.png" /></a>
+			<ul class="head_ation">
+				<li><a href="/index.html"><i class="head_i">首页&nbsp;/&nbsp;home</i></a></li>			
+				<li><a href="/news.html"><i class="head_i">新闻&nbsp;/&nbsp;news</i></a></li>
+				<li><a href="/column.html"><i class="head_i">栏目&nbsp;/&nbsp;column</i></a></li>
+				<!-- <li><a href="/newsPage/getNewsVideoPage.xhtml"><i class="head_i">栏目&nbsp;/&nbsp;column</i></a></li>  -->
+				<li><a href="/about.html"><i class="head_i">关于&nbsp;/&nbsp;about</i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<title>去农庄-视频专栏</title>
+
+	<script type="text/javascript">
+	$(function(){
+		var herf = window.location.href;	
+		var article = herf.charAt(herf.length - 6);
+		$(".video_navigation li a").removeClass("cull");
+		if( article == 5){
+			$(".video_navigation li").eq(1).find("a").addClass("cull");
+		}else if( article == 6){
+			$(".video_navigation li").eq(2).find("a").addClass("cull");
+		}else if( article == 7){
+			$(".video_navigation li").eq(3).find("a").addClass("cull");
+		}else if( article == 8){
+			$(".video_navigation li").eq(4).find("a").addClass("cull");
+		}else if( article == 9){
+			$(".video_navigation li").eq(5).find("a").addClass("cull");
+		}else{
+			$(".video_navigation li").eq(0).find("a").addClass("cull");
+		}
+	});
+	</script>
+</head>
+<body>
+<input type="hidden" value="3" id="hrefid"/>
+<!-- 横幅 banner -->
+<div class="banner" style='background-image:url("images/balackground_column_1.png");'>
+	<img src="picture/column-banner_1.png" class="banner_img" alt="视频专栏-横幅图片"/>
+	<div class="w1200">
+		<div class="banner_ma">
+			<h1>视频专栏</h1>
+			<span>Video Column</span>
+		</div>
+	</div>
+</div>
+
+<!-- 中间 middle -->
+<div class="middle">
+	<div class="middle_ma">
+		<div class="middle_top">
+			<h1>视听盛宴</h1>
+			<span>COLUMNAU DIO-VISUAL FEAST</span>
+			<img src="picture/middle_top_3.png"/>
+		</div>
+		<div class="put-pic1200">
+			<ul class="pic1200-ul clear video_navigation">
+				
+				<li><a href="/column.html" class="cull">全部</a></li>
+				
+				<li><a href="/column5.html">Hello去农庄</a></li>
+				
+				<li><a href="/column6.html">你好 庄主！</a></li>
+				
+				<li><a href="/column7.html">视讯</a></li>
+				
+				<li><a href="/column8.html">宣传片</a></li>
+				
+				<li><a href="/column9.html">短片</a></li> 
+			</ul>
+			<div class=qnz-vio>
+				<ul class="videos clear picright13">
+					
+						<li>
+						<div class="videos_a eject" title="去农庄携手狮子猫登陆浙江省">
+						<div class="qnz_videos_d"><img src="picture/20170527120644079_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3613次播放</div>
+						<div class="video-t0">去农庄携手狮子猫登陆浙江省</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=z0392dwk1go&auto=0</a>
+						<i class="none column_sj">2017-05-27 12:04:13</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="大卫的猜想——共享经济下的共享商城">
+						<div class="qnz_videos_d"><img src="picture/20170527120251849_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3354次播放</div>
+						<div class="video-t0">大卫的猜想——共享经济下的共享商城</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=c0501zec3fk&auto=0</a>
+						<i class="none column_sj">2017-05-27 12:00:18</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="狮子猫商城快闪广告">
+						<div class="qnz_videos_d"><img src="picture/20170527120044331_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4440次播放</div>
+						<div class="video-t0">狮子猫商城快闪广告</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=u0504a08zsr&auto=0</a>
+						<i class="none column_sj">2017-05-27 11:43:28</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="让城里人爱上回农村">
+						<div class="qnz_videos_d"><img src="picture/20170527114432313_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3743次播放</div>
+						<div class="video-t0">让城里人爱上回农村</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=k0506zzr9d2&auto=0</a>
+						<i class="none column_sj">2017-05-27 10:37:32</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="全球十大最美温泉">
+						<div class="qnz_videos_d"><img src="picture/20170405162029862_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4402次播放</div>
+						<div class="video-t0">全球十大最美温泉</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=k0390ocnl5s&auto=0</a>
+						<i class="none column_sj">2017-04-05 16:19:11</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="狮子猫商城项目介绍">
+						<div class="qnz_videos_d"><img src="picture/20170405160318824.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">6548次播放</div>
+						<div class="video-t0">狮子猫商城项目介绍</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=y03872otmij&auto=0</a>
+						<i class="none column_sj">2017-04-05 16:02:44</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="返呗支付动画宣传片">
+						<div class="qnz_videos_d"><img src="picture/20170323160013463_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4701次播放</div>
+						<div class="video-t0">返呗支付动画宣传片</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=w0386ooz37j&auto=0</a>
+						<i class="none column_sj">2017-03-23 16:00:04</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="十大最美乡村造梦者">
+						<div class="qnz_videos_d"><img src="picture/20170309173144718_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4426次播放</div>
+						<div class="video-t0">十大最美乡村造梦者</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=g0381l3onze&auto=0</a>
+						<i class="none column_sj">2017-03-09 15:21:40</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="狮子猫商城宣传片">
+						<div class="qnz_videos_d"><img src="picture/20170323155944283_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">5139次播放</div>
+						<div class="video-t0">狮子猫商城宣传片</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b0386rk6yil&auto=0</a>
+						<i class="none column_sj">2017-03-09 15:20:40</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="十大最奇葩的乡村习俗">
+						<div class="qnz_videos_d"><img src="picture/20170309173244657_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3087次播放</div>
+						<div class="video-t0">十大最奇葩的乡村习俗</div>
+						<a class="none column_mp4">https://v.qq.com/x/page/v03799eszjl.html</a>
+						<i class="none column_sj">2017-03-09 15:19:24</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="不得不去的自然村落">
+						<div class="qnz_videos_d"><img src="picture/20170309172841196_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3849次播放</div>
+						<div class="video-t0">不得不去的自然村落</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=t0378l275xi&auto=0</a>
+						<i class="none column_sj">2017-03-09 15:16:05</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="不可错过的十大民宿">
+						<div class="qnz_videos_d"><img src="picture/20170309173417192_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">5223次播放</div>
+						<div class="video-t0">不可错过的十大民宿</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=g0381l3onze&auto=0</a>
+						<i class="none column_sj">2017-03-09 14:59:13</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄APP1.3版本介绍">
+						<div class="qnz_videos_d"><img src="picture/20170220120254464_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2501次播放</div>
+						<div class="video-t0">去农庄APP1.3版本介绍</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=w0374abtgna&auto=0</a>
+						<i class="none column_sj">2017-02-20 11:59:15</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="我们不急 但要跑赢时间">
+						<div class="qnz_videos_d"><img src="picture/20170207155226679_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4955次播放</div>
+						<div class="video-t0">我们不急 但要跑赢时间</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=m03681td0gv&auto=0</a>
+						<i class="none column_sj">2017-02-07 15:49:58</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄新年贺岁">
+						<div class="qnz_videos_d"><img src="picture/20170207154935527_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3668次播放</div>
+						<div class="video-t0">去农庄新年贺岁</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=j0364p9k355&auto=0</a>
+						<i class="none column_sj">2017-02-07 15:27:24</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="把关于“农”的全部理想装进这个山庄">
+						<div class="qnz_videos_d"><img src="picture/20161226140907264_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2212次播放</div>
+						<div class="video-t0">把关于“农”的全部理想装进这个山庄</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=s03550qt4qz&auto=0</a>
+						<i class="none column_sj">2016-12-26 14:07:07</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄周年庆股东篇">
+						<div class="qnz_videos_d"><img src="picture/20170104164406865_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2531次播放</div>
+						<div class="video-t0">去农庄周年庆股东篇</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=x0352t1xi2j&auto=0</a>
+						<i class="none column_sj">2016-12-06 09:09:20</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="庄主们真的只是想泡在舒适圈吗？">
+						<div class="qnz_videos_d"><img src="picture/20161226092522653_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1501次播放</div>
+						<div class="video-t0">庄主们真的只是想泡在舒适圈吗？</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=r0351y04yjj&auto=0</a>
+						<i class="none column_sj">2016-12-05 16:46:42</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="把日子过成理想的模样">
+						<div class="qnz_videos_d"><img src="picture/20161226093751811_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2381次播放</div>
+						<div class="video-t0">把日子过成理想的模样</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=d0322kn4up4&auto=0</a>
+						<i class="none column_sj">2016-12-05 16:15:04</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="风吹麦浪，岁月如歌">
+						<div class="qnz_videos_d"><img src="picture/20161223182426010_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2470次播放</div>
+						<div class="video-t0">风吹麦浪，岁月如歌</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=i03312qjbk3&auto=0</a>
+						<i class="none column_sj">2016-12-05 12:06:27</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="文化产权交易所邀请去农庄挂牌">
+						<div class="qnz_videos_d"><img src="picture/20161223184338617_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1194次播放</div>
+						<div class="video-t0">文化产权交易所邀请去农庄挂牌</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=a0350uu84u7&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:49:12</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄网与浙投股权签订战略合作协议">
+						<div class="qnz_videos_d"><img src="picture/20161223184300949_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1749次播放</div>
+						<div class="video-t0">去农庄网与浙投股权签订战略合作协议</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=c0347deb1eh&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:48:15</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄周年庆（庄主篇）">
+						<div class="qnz_videos_d"><img src="picture/20161226092949407_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1712次播放</div>
+						<div class="video-t0">去农庄周年庆（庄主篇）</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=m0344rcu31e&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:45:36</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄第一届股东大会圆满举行">
+						<div class="qnz_videos_d"><img src="picture/20161223184425361_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2606次播放</div>
+						<div class="video-t0">去农庄第一届股东大会圆满举行</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b0341n6m6sw&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:38:01</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄团队展示概念篇">
+						<div class="qnz_videos_d"><img src="picture/20161226093939384_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1345次播放</div>
+						<div class="video-t0">去农庄团队展示概念篇</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=w0341e6z8u8&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:36:03</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="你是去旅行的，又不是随便走走">
+						<div class="qnz_videos_d"><img src="picture/20161226094432077.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2343次播放</div>
+						<div class="video-t0">你是去旅行的，又不是随便走走</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=g0338lf8emm&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:34:16</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄出展第33届华南区最大特许加盟展">
+						<div class="qnz_videos_d"><img src="picture/20161223184148114_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">992次播放</div>
+						<div class="video-t0">去农庄出展第33届华南区最大特许加盟展</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=m0331mx82yb&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:27:55</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="一起嗨翻天">
+						<div class="qnz_videos_d"><img src="picture/20161226094608462_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2020次播放</div>
+						<div class="video-t0">一起嗨翻天</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=w03275b8u97&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:23:17</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="听Boss说">
+						<div class="qnz_videos_d"><img src="picture/20161223184058475_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1248次播放</div>
+						<div class="video-t0">听Boss说</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=z03254xjn26&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:16:01</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="永远不要与趋势为敌">
+						<div class="qnz_videos_d"><img src="picture/20161226095108189_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1190次播放</div>
+						<div class="video-t0">永远不要与趋势为敌</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=i03257evtat&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:08:22</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄APP宣传片">
+						<div class="qnz_videos_d"><img src="picture/20161226094840218_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4162次播放</div>
+						<div class="video-t0">去农庄APP宣传片</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=f0301f5hssv&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:06:07</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄第一期运营培训会议">
+						<div class="qnz_videos_d"><img src="picture/20161223183709561_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1410次播放</div>
+						<div class="video-t0">去农庄第一期运营培训会议</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=e03202nt3jq&auto=0</a>
+						<i class="none column_sj">2016-12-05 10:01:58</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="情人节，勇敢说爱你">
+						<div class="qnz_videos_d"><img src="picture/20161228145436201.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3257次播放</div>
+						<div class="video-t0">情人节，勇敢说爱你</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=j0320zt9pgp&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:57:19</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="情人节 ， 不再让你孤单">
+						<div class="qnz_videos_d"><img src="picture/20161228144724214_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">4457次播放</div>
+						<div class="video-t0">情人节 ， 不再让你孤单</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=l0319oz94c8&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:56:01</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="去农庄带你走进绿色王国">
+						<div class="qnz_videos_d"><img src="picture/20161223183404980_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1235次播放</div>
+						<div class="video-t0">去农庄带你走进绿色王国</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=j0315plx7hc&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:49:56</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="上去农庄与自我对话">
+						<div class="qnz_videos_d"><img src="picture/20161226094005538_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3144次播放</div>
+						<div class="video-t0">上去农庄与自我对话</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=q0309c78ywx&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:43:40</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="因为你是我爸爸">
+						<div class="qnz_videos_d"><img src="picture/20161226094201029_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2073次播放</div>
+						<div class="video-t0">因为你是我爸爸</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b0307dl8mrq&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:38:04</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="熊孩子去农庄">
+						<div class="qnz_videos_d"><img src="picture/20161223183226894_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1423次播放</div>
+						<div class="video-t0">熊孩子去农庄</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=v03063k46g9&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:31:56</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="让所有梦想落地开花">
+						<div class="qnz_videos_d"><img src="picture/20161223182156221_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">3158次播放</div>
+						<div class="video-t0">让所有梦想落地开花</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=p0315whemt4&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:28:05</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="以梦为马，不负韶华">
+						<div class="qnz_videos_d"><img src="picture/20170104163752590_1.png" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1380次播放</div>
+						<div class="video-t0">以梦为马，不负韶华</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=h0323bhh2pq&auto=0</a>
+						<i class="none column_sj">2016-12-05 09:06:18</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="日出而耕，日落而息">
+						<div class="qnz_videos_d"><img src="picture/20161223183113286_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">2297次播放</div>
+						<div class="video-t0">日出而耕，日落而息</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=v0318kki398&auto=0</a>
+						<i class="none column_sj">2016-12-03 12:08:37</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="深圳的“湖南味道”">
+						<div class="qnz_videos_d"><img src="picture/20161223183054899_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1103次播放</div>
+						<div class="video-t0">深圳的“湖南味道”</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b035011jmy0&auto=0</a>
+						<i class="none column_sj">2016-12-03 12:04:51</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="每个人都可以是梦想家">
+						<div class="qnz_videos_d"><img src="picture/20161226092640773_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1174次播放</div>
+						<div class="video-t0">每个人都可以是梦想家</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=a0330gdpvi4&auto=0</a>
+						<i class="none column_sj">2016-12-03 12:03:39</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="择一城而居">
+						<div class="qnz_videos_d"><img src="picture/20161226092546363_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1766次播放</div>
+						<div class="video-t0">择一城而居</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=x031701maph&auto=0</a>
+						<i class="none column_sj">2016-12-03 12:00:11</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="世界太嘈杂，我想去农庄">
+						<div class="qnz_videos_d"><img src="picture/20161226094531204_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">6964次播放</div>
+						<div class="video-t0">世界太嘈杂，我想去农庄</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=b0315lsbaj5&auto=0</a>
+						<i class="none column_sj">2016-12-03 11:56:42</i>
+						</div>
+						</li>
+			   	     
+						<li>
+						<div class="videos_a eject" title="《花样年华》番外篇">
+						<div class="qnz_videos_d"><img src="picture/20161226094109846_1.jpg" alt="去农庄"/></div>
+						<p class="layer"></p>
+						<div class="bf small-font">1754次播放</div>
+						<div class="video-t0">《花样年华》番外篇</div>
+						<a class="none column_mp4">https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=q0305uolbxv&auto=0</a>
+						<i class="none column_sj">2016-12-03 11:50:04</i>
+						</div>
+						</li>
+			   	     
+				</ul>
+			</div>
+			<!-- <ul class="column_choose" style="display:none;">
+				<li>
+					<a class="column_year">2016</a>
+					<ul class="column_month" style="display: block;">
+						<li class="cull"><i>·</i><a href="javascript:void(0);">8月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">7月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">6月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">5月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">4月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">3月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">2月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">1月</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="column_year">2015</a>
+					<ul class="column_month">
+						<li><i>·</i><a href="javascript:void(0);">12月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">11月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">10月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">9月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">8月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">7月</a></li>
+						<li><i>·</i><a href="javascript:void(0);">6月</a></li>
+					</ul>
+				</li>
+			</ul> -->
+		</div>
+	</div>
+</div>
+
+<!-- 底部 footer -->
+<div class="footer footer-h120">
+	<ul class="footer-di">
+		<li>总部：深圳市龙华新区民治人民路恒江大厦11楼</li>
+		<li>客户服务热线：400-6977-020</li>
+		<li class="li-h">&copy;copyright 2016 | 去农庄 ALL rights reserved.粤ICP备15060648号-2</li>
+	</ul>
+</div>
+
+
+<!-- 模糊层弹出框 vague -->
+<div class="vague">
+	<div class="popup vertical">
+		<div class="play" title="">
+			
+		</div>
+		<div class="introduce">
+			<a class="close">
+				<img src="picture/close__1.png" alt=""/>
+			</a>
+			<div class="clear column_text">
+				<h4></h4>
+				<i></i>
+			</div>
+			<p></p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+//栏目视频年份月份效果
+$('.column_choose .column_year').click(function(){
+	$('.column_month').hide();
+	$('.column_month li').removeClass('cull');
+	$(this).siblings('.column_month').show();
+	$(this).siblings('.column_month').find('li:first').addClass('cull');
+});
+$('.column_month a').click(function(){
+	$('.column_month li').removeClass('cull');
+	$(this).parent().addClass('cull');
+});
+$('.details-new a').click(function(){
+	$(this).parent().addClass('details-new-curr').siblings().removeClass('details-new-curr');
+});
+
+//弹出模态框
+$(document).on("click",".eject",function(){
+	$('.play').empty();
+	$('.vague').show();
+	var src  = $(this).find('.column_mp4').text() +'&autoplay=1';  
+	var h4   = $(this).find('.video-t0').text();  
+	var shij = $(this).find('.column_sj').text(); 
+	$('.play').attr('title',h4);
+	$('.column_text h4').text(h4);
+	$('.column_text i').text(shij);
+	$('<embed src="'+src+'" quality="high" id="column_video" align="middle" wmode="transparent" allowScriptAccess="never" allowNetworking="internal" allowfullscreen="true" autostart="0" type="application/x-shockwave-flash"></embed>').appendTo('.play'); 
+});
+
+//关闭模态框
+$(document).on("click",".close",function(){
+	$('.vague').hide();
+});
+
+//绑定touchmove事件  手指在屏幕上滑动的时候连续地触发
+document.getElementById("vague").addEventListener("touchmove", touchMove, false);
+function touchMove(evt) {  //手指在屏幕上滑动的时候连续地触发     
+   evt.preventDefault();
+}
+</script>
+</body>
+</html>
